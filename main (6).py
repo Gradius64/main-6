@@ -4,6 +4,44 @@ from BankingClasses.checking import CheckingAccount
 from BankingClasses.savings import SavingsAccount
 
 
+
+
+def main():
+    max_attempts = 3
+    attempts = 0
+
+    while attempts < max_attempts:
+        email = input("Enter your email: ")
+        password = input("Enter your password: ")
+        
+        if validate_login(email, password):  # Assuming you have a function to validate login
+            print("Login successful!")
+            break
+        else:
+            attempts += 1
+            print("Invalid credentials. Please try again.")
+
+    if attempts == max_attempts:
+        print("Maximum number of attempts reached. Exiting program.")
+
+def validate_login(email, password):
+    # Replace this with your actual validation logic
+    return email == "user@example.com" and password == "password123"
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
 def main():
     """
     This function is the entry point of the banking system.
