@@ -24,13 +24,13 @@ def main():
     while attempts < 3:
 
 
-        class Validation:
-            @staticmethod
+        ##class Validation:
+            ##@staticmethod
                 
         # Your validation logic here
     
 
-            @staticmethod
+           ## @staticmethod
                     
         # Your validation logic here
                
@@ -38,31 +38,34 @@ def main():
            
             # If the email or password is invalid, print a message
             # and increment the attempts variable.
-if attempts >= 3:
-    print("Maximum number of attempts reached. Exiting program.")
-    exit()  # Or any other way you want to exit the program
+            if attempts >= 3:
+                print("Maximum number of attempts reached. Exiting program.")
+                exit()  # Or any other way you want to exit the program
 
     # If the maximum number of attempts is reached, print a message
     # and exit the program.
 
 print("Maximum number of attempts reached. Exiting program.")
-        return
+def add(a, b):
+    return a + b  # This returns the sum of a and b
 
+result = add(5, 3)  # Calls the function and stores the returned value in result
+print(result) 
     # Set up accounts with default balances.
-    checking_account = CheckingAccount(4321.00)
-    savings_account = SavingsAccount(6543.21)
+checking_account = CheckingAccount(4321.00)
+savings_account = SavingsAccount(6543.21)
 
     # Print a message for the user inform them of their checking
     # and savings balances.
-    print("\nHere are your account balances:")
+print("\nHere are your account balances:")
     # Use the get_balance method to retrieve the
     # current balance of each account.
-    print(f"Checking: ${checking_account.get_balance():,.2f}")
-    print(f"Savings: ${savings_account.get_balance():,.2f}")
+print(f"Checking: ${checking_account.get_balance():,.2f}")
+print(f"Savings: ${savings_account.get_balance():,.2f}")
 
     # Write a while loop to present options for the user.
     # Have the loop run until the user chooses to quit (q).
-    while True:
+while True:
         print("\nWhat would you like to do?")
         print("Make a deposit? Enter 1")
         print("Make a withdrawal? Enter 2")
@@ -116,3 +119,4 @@ print("Invalid choice. Please enter 1, 2, 3, 4, or q.\n")
 
 if __name__ == "__main__":
     main()
+
